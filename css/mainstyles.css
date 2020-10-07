@@ -6,10 +6,8 @@
 body
 {
 background-image: url("../images/space-safari-background.png");
-opacity: 0;
-transition: opacity .5s;
-
 } 
+
 body::-webkit-scrollbar {
   width: 12px;               
 }
@@ -32,5 +30,17 @@ a:hover {
  opacity:    0.5;                  
  width:      250px;
  height:     250px;
+ border: 5px solid grey;
 
 }
+
+.row{
+  display: flex;
+}
+.imageColumn{
+  flex: 25%;
+}
+.textColumn{
+  flex: 75%;
+}
+
