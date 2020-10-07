@@ -1,0 +1,36 @@
+.blur-box {
+    background-color: black;
+    box-shadow: 0 0 5px 10px rgb(19,9,71);
+}
+
+body
+{
+background-image: url("../images/space-safari-background.png");
+opacity: 0;
+transition: opacity .5s;
+
+} 
+body::-webkit-scrollbar {
+  width: 12px;               
+}
+body::-webkit-scrollbar-track {
+  background: grey;       
+}
+body::-webkit-scrollbar-thumb {
+  background-color: black;    
+  border-radius: 20px;       
+  border: 3px solid grey;  
+}
+
+a:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+#img1
+{
+ opacity:    0.5;                  
+ width:      250px;
+ height:     250px;
+
+}
