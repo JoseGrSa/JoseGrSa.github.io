@@ -20,8 +20,8 @@ body::-webkit-scrollbar-thumb {
 .Intro{
     height: calc(100vh - 8em);
     padding: 4em;
-    background-image:url(../Images/main-background.gif);
-    background-size: contain;
+    background: url(../Images/main-background.gif) no-repeat center center fixed;
+    background-size: cover;
     text-shadow:
         0.07em 0 black,
         0 0.07em black,
