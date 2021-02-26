@@ -94,7 +94,7 @@ body::-webkit-scrollbar-thumb {
     }
         @keyframes typewriter-1{
             from{width: 0;}
-            to{width: 11.5em; border-right-width: 0;}
+            to{width: 12.5em; border-right-width: 0;}
         }
         @keyframes blinkTextCursor-1{
             from{border-right-color: rgba(255,255,255,.75);}
@@ -106,7 +106,7 @@ body::-webkit-scrollbar-thumb {
     }
         @keyframes typewriter-2{
             from{width: 0; border-width: 0px}
-            to{width: 17em;}
+            to{width: 18em;}
         }
         @keyframes blinkTextCursor-2{
             from{border-right-color: rgba(255,255,255,.75);}
