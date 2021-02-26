@@ -1,19 +1,162 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title> Jose Granger Salgado </title>	                                            	
-<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=cB6VZy2BdirPHmu6feT57OD1VKeHGQVNq3JWZtWaBPCXLVj6e0AYBwVbwAR_YW_94ziCb44tscGm1gDLzsy5t1tw_UmtBvh5RET6klWFmro" charset="UTF-8"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Images/favicon.png" >
+    <link type="text/css" rel="stylesheet" href="../CSS/mainstyles.css">
+    <link type= "text/css" rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=eIYhsiv4YU4DoFfcJVoBOIhw63skX4fPXtrzR4EVAUGFbPKbdzEB2ps1st8tg_7GNOzux6Jvl9qX-S_gPwKQ1uJJsJs3nRCTLd0cYpOkSlluRGDdCKk-w-A1Bbr4hOpR_6RHjY0tuPN_vrhcxtoeiyx-EE5XDzdfvmPWrIsx3OAf8JW0_edBstZmZtf0bBEI84RrvV0jv-K06eCVoHBdhhyCgdxrUnJPDH3DOuYZry06WofZhG6anDYwHkumvsj-4_-4ym8gXov-BWvYKlwmVHs0xrkGcQlgkFkks7A_Ff4UeU5vG-kaOdLjTMQFtn9w5MntRfhr7jjtZwbiN-qAPakBVvNhHekVHZujfnyPjEjp6TItch5QpWBeuAji7m7eEM6bfuk_iY0ziXBBDrrmUq4pBa6I8Y8CweHhyvwnA01In0G97gnYz-YCYg3jOOsZ4MZORXcbBam66lK-6gqWL05W_5Yf2Adc1qKD8cJJxHAGn-LRAawdrZpOodfEn3-VjTY7X1BvQlEnoz406EFJvhQz6P_x3kQqdokYSmA5tylmbomuE2pXbOsTDrqRW2aV_6BjgVFKhqfX5X7zcrBR9Bm70_FJMso1YLu-HvrgRCQkF4ofh-lQ_TaQYFY62IRBb5ljXx8zUIHN2QkGpTioUA" charset="UTF-8"></script>
+<script type="text/javascript" src="../Javascript/jQuery.js"></script>
+<title>Jose Webpage</title>
 </head>
-<link rel="stylesheet" href="../css/mainstyles.css"/>
 
-<div class="blur-box" style= "transition:10s;background-image: url(../images/8bitgifjapan.gif);  height:100%; background-repeat: no-repeat;background-size: cover;background-position: center;">
-    <a href="../html/aboutme.html" span style="transition:1s;left:50px;position:fixed;font-size:30;color:rgb(250,250,250);"> About Me </a>
-    <Center><a href="../images/Resume-JoseGrangerSalgado.pdf" target="_blank" span style="transition:1s;position:fixed;font-size:30;color:rgb(250,250,250);"> Skills </a></Center>
-    <a href="https://github.com/JoseGrSa" target="_blank" span style="transition:1s;right:50px;position:fixed;font-size:30;color:rgb(250,250,250);"> Personal Projects </a>
-<Center>
-<span style= "padding:0;position:absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size:55; font-weight: 90;color: rgb(229, 228, 226);">Jose Granger Salgado</span>
-<br>
-<span style= "position:absolute;top: 56%;left: 50%;transform: translate(-50%, -50%);font-size:20; font-weight: 20;color: rgb(229, 228, 226);">Computer Science Undergraduate</span>
-</Center>
-<br>
-</div>
+<body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content" onclick="closeNav()">
+          <a href="#who">About Me</a>
+          <a href="#project">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div id=Introduction class=Intro>
+        <div id=navigationbar>
+            <div id=menu  onclick="openNav()"><img src="../Images/navigation.png"></div>
+            <button id="playbutton2" onclick="playMusic()"></button>
+        </div>
+        <div id=typewriter>
+            <p class="line-1 anim-typewriter-1">Jose Granger Salgado</p>
+        </div>
+        <div id=typewriter-2>
+            <p class="line-2 anim-typewriter-2">Computer Science Undergraduate</p>
+        </div>
+        <div id=audiomisc>
+            <audio id="audio"><source src="../Images/cherry blossom. [lofi jazzhop chill mix].mp3" type="audio/mpeg"></audio>
+            <button id="playbutton1" onclick="playMusic()"></button>    
+            <p id="mustex"> Listen to some chill music while you browse my website (You can pause it)</p>
+        </div>
+        <div id=enter>
+            <button id="enterbutton" onclick="realPage()">Enter Site</button>
+        </div>
+        <div id=scroll><img src="../Images/scroll.jpg"> </div>
+    </div>
+
+    <div class=Aboutme>
+        <div id="who" data-aos="fade-down"><strong>About Me</strong></div>
+        <div id=inwho data-aos="fade-down">
+            <p>I am studying a Bachelor in <span style="color: #f2b944">Computer Science</span> at a school called <span id="tec" href="https://tec.mx/en/about-us" target="_blank" style="color: lightskyblue; cursor:pointer;">Instituto Tecnológico y de Estudios Superiores de Monterrey, Campus Santa Fe</span>.
+            Although I have lived in Mexico City for most of my life, I love going to new places and integrating with new cultures, due to which I have participated in various exchange programs. I love <span style="color: #f2b944">software and hardware development</span>
+            since I consider myself a creative person with an affinity for creating new things. </p>
+        </div>
+
+        <div class="slideshow-container" data-aos="flip-up">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="../Images/gal1.jpg" style="width:100%">
+              <div class="text">Berlin</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="../Images/gal2.jpg" style="width:100%">
+              <div class="text">Myself</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="../Images/gal3.jpg" style="width:100%">
+              <div class="text">Skyline</div>
+            </div>
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <div style="text-align:center; padding-left: 4vh;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div id=endwho>    
+            <div id=ewi data-aos="fade-right"><img src="../Images/mi1.jpg"></div>
+            <div id=ewt data-aos="fade-left" style="padding-left:10vh;"><p>My hobbies are <span style="color: #f2b944">coding, reading, playing videogames and doing some sports</span>. I am most passionate about the front-end side of development, though I still enjoy coding algorithms and various back-end products. My interests are mainly around developing innovative products for both web and mobile, though I am
+                <span style="color: #f2b944">always open to new experiences</span> and methods.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class=Project id=project>
+
+        <div id="proi" data-aos="fade-down"><strong>Projects</strong></div>
+            <div class=Card data-aos="fade-right">
+                <div id=struo><img src="../Images/proj1.jpeg"><p style="font-size:x-large;"><strong>Struo App</strong></p><p>The <span style="color: blue">prototype</span> of an <span style="color: blue">organizational app</span> made for the <span style="color: blue">OneMonthHack</span> challenge</p><p id=git><a href="https://github.com/JoseGrSa/StruoAPP" target="_blank">GitHub</a></p></div></div> 
+            <div class=Card data-aos="fade-down">  
+                <div id=kmeans><img src="../Images/proj2.png"><p style="font-size:x-large;"><strong>KMeans Algorithm</strong></p><p>An organized <span style="color: blue">Github repository</span> exploring a basic <span style="color: blue">algorithm of classification</span>, using and understanding a bare-bones base into <span style="color: blue">A.I. system development</span></p><p id=git><a href="https://github.com/JoseGrSa/K_MeansPython" target="_blank">Github</a></p></div></div> 
+            <div class=Card data-aos="fade-left">      
+                <div id=adt><img src="../Images/pro3.png"><p style="font-size:x-large;"><strong>Network Attack</strong></p><p>Using a csv dataset which simulates an <span style="color: blue">attack on a network</span>, we made use of various <span style="color: blue">algorithms and data </span> in order to correctly identify the <span style="color: blue">problematic connection</span>, how long the attack has been going on and <span style="color: blue">possible solutions</span></p><p id=git><a href="https://github.com/JoseGrSa/Reto_Algoritmos" target="_blank">Github</a></p></div></div> 
+            <div class=Card data-aos="fade-up">      
+                <div id=webpage><img src="../Images/pro4.png"><p style="font-size:x-large;"><strong>Website</p></strong><p>A work of love and passion, this website is one of the projects I am most proud of, My plan is to <span style="color: blue">continually improve it</span> and add various <span style="color: blue">back-end software using databases and Javascript</p><p id=git><a href="https://github.com/JoseGrSa" target="_blank">Github</a></p></div></div> 
+        <div id=github data-aos="fade-up"><a href="https://github.com/JoseGrSa" target="_blank"><img src="../Images/giticon.png"></a><p>Find more projects on my Github</p></div>
+        
+    </div>
+    
+    <div class=Skills id=skills>
+
+        <div id="proi" data-aos="fade-down"><strong>Skills</strong></div>
+        <div id="prod" data-aos="fade-right"><strong>Frontend</strong></div>
+        <div id=Frontend>
+            <div id=HTML data-aos="flip-right"><img src="../Images/html.png"><p>HTML 5</p></div>
+            <div id=CSS data-aos="flip-right"><img src="../Images/css.webp"><p>CSS3</p></div>
+            <div id=Javascript data-aos="flip-left"><img src="../Images/javascript.png"><p>Javascript</p></div>
+            <div id=Wordpress data-aos="flip-left"><img src="../Images/wordpress.png"><p>Wordpress</p></div>
+        </div>         
+        <hr>
+        <div id="prod" data-aos="fade-right"><strong>Main Languages</strong></div>
+        <div id=Main-Languages>
+            <div id=Python data-aos="flip-right"><img src="../Images/python.webp"><p>Python</p></div>
+            <div id=C++ data-aos="flip-up"><img src="../Images/Cpp.png"><p>C++</p></div>
+            <div id=Java data-aos="flip-left"><img src="../Images/java.png"><p>Java</p></div>
+        </div>
+        <hr>
+        <div id="prod" data-aos="fade-right"><strong>Secondary Languages</strong></div>
+        <div id=Secondary-Languages>
+            <div id=MatLab data-aos="flip-right"><img src="../Images/mat.png"><p>Matlab</p></div>
+            <div id=R data-aos="flip-left"><img src="../Images/r.png"><p>R</p></div>
+        </div>
+        <hr>
+        <div id="prod" data-aos="fade-right"><strong>Databases</strong></div>
+        <div id=Databases>
+            <div id=MySQL data-aos="flip-right"><img src="../Images/sql.png"><p>MySQL</p></div>
+            <div id=Mongo data-aos="flip-left"><img src="../Images/mongo.png"><p>MongoDB</p></div>
+        </div>
+        <hr>
+        <div id="prod" data-aos="fade-right"><strong>Development Tools</strong></div>
+        <div id=Tools>
+            <div id=Flutter data-aos="flip-right"><img src="../Images/flutter.png"><p>Flutter</p></div>
+            <div id=Git data-aos="flip-right"><img src="../Images/git.png"><p>Git</p></div>
+            <div id=Github data-aos="flip-left"><img src="../Images/githubs.png"><p>Github</p></div>
+            <div id=LaTeX data-aos="flip-left"><img src="../Images/lat.png"><p>LaTeX</p></div>
+        </div>
+        <div id="proi" data-aos="fade-up">Check my (outdated) <a href="../Images/Resume-JoseGrangerSalgado.pdf" target="_blank">resume</a> for more information</div>
+
+    </div>
+
+    <div class=Contact id=contact>
+        <a href="mailto:chasedhydra@gmail.com"><button id=contactbutton data-aos="fade-down">Contact Me</button></a>
+    </div>                
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../Javascript/main.js"></script>
+</body>
 </html>
