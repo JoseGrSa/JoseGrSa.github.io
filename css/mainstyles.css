@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     height: 100%;
     overflow: hidden;
@@ -167,6 +171,7 @@ body::-webkit-scrollbar-thumb {
             margin-top: 45vh;
             opacity: 0;
             transition: 5s;
+            cursor: pointer;
         }
 
 
